@@ -12,7 +12,7 @@ class SeniorCareApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'EloSênior',
+      title: 'Gerente-Sênior',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
@@ -22,7 +22,8 @@ class SeniorCareApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const ProfileSelectionScreen(),
+      // Redireciona diretamente para o Modo Sênior
+      home: const SeniorHomeScreen(), // <-- Substitua pelo nome exato do seu Widget do Modo Sênior
     );
   }
 }
