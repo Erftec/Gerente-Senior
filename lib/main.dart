@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 
 import 'senior_home_screen.dart';
 
-void main() {
+void main() async {
+  // Necessário para inicializar recursos nativos/web antes do runApp
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Inicialização do Supabase
+  await Supabase.initialize(
+    url: 'SUA_URL_DO_SUPABASE',
+    anonKey: 'SUA_CHAVE_ANONIMA_DO_SUPABASE',
+  );
+
   runApp(const SeniorCareApp());
 }
 
