@@ -8,8 +8,8 @@ void main() async {
 
   // Inicialização do Supabase
   await Supabase.initialize(
-    url: 'SUA_URL_DO_SUPABASE',
-    anonKey: 'SUA_CHAVE_ANONIMA_DO_SUPABASE',
+    url: 'https://nazpvahffqyixqzfncgc.supabase.co',
+    anonKey: 'sb_publishable_ltCs0QxVVwTw80lB9K61fg_4waKuGrB',
   );
 
   runApp(const SeniorCareApp());
